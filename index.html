@@ -52,7 +52,7 @@
                     output.innerHTML = 50;
                     currentPlayer++;
                     if(currentPlayer > numberOfPlayers) incrementGamePhase();
-                    else instructions.innerHTML = "It it player " + currentPlayer + "'s turn.";
+                    else instructions.innerHTML = "It is player " + currentPlayer + "'s turn.";
                     break;
                 case "results":
                     if(slider.value == 36)
@@ -77,7 +77,7 @@
                         console.log("Score method: " + scoreMethod);
                     }
                     else
-                    instructions.innerHTML = "Great. " + numberOfPlayers + " people are playing. It it player 1's turn.";
+                    instructions.innerHTML = "Great. " + numberOfPlayers + " people are playing. It is player 1's turn.";
                     break;
                 case "playersPlaying":
                     currentGamePhase = "results";
@@ -186,22 +186,21 @@
     <style>
         body{
             background-color: white;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        div{
+            margin-top: 10px;
         }
 
         .slider{
             width: 69%;
         }
 
-        #slidecontainer{
-            text-align: center;
-        }
-
         #instructions{
-            text-align: center;
-        }
-
-        #number{
-            text-align: center;
+            display: inline-block;
+            width: 80%;
         }
     </style>
 </html>
